@@ -2,7 +2,7 @@ const { Router } = require("express");
 
 const router = Router();
 
-const Film = require("../models/film");
+const Film = require("../models/film.js");
 
 router.post("/add", async (req) => {
     const film = new Film(req.body);

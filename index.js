@@ -7,13 +7,13 @@ const session = require("express-session");
 const mongoose = require("mongoose");
 const MongoStore = require("connect-mongodb-session")(session);
 const bodyParser = require("body-parser");
-const coursesRoute = require("./routes/courses");
-const authRoute = require("./routes/auth");
-const filmsRoute = require("./routes/films");
+const coursesRoute = require("./routes/courses.js");
+const authRoute = require("./routes/auth.js");
+const filmsRoute = require("./routes/films.js");
 
 const MONGO_URI = 'mongodb+srv://artem:12345@cluster0.6bskz.mongodb.net/CyberIz?retryWrites=true&w=majority';
 
-const userMiddleware = require("./middleware/user");
+const userMiddleware = require("./middleware/user.js");
 
 app.use(cors());
 
