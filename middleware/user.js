@@ -1,4 +1,4 @@
-const User = require("../models/User.js");
+const User = require("../models/User");
 
 module.exports = async function (req, res, next) {
     if (!req.session.user) {

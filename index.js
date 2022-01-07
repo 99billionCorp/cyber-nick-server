@@ -12,7 +12,7 @@ const filmsRoute = require("./routes/films.js");
 
 const MONGO_URI = 'mongodb+srv://artem:12345@cluster0.6bskz.mongodb.net/CyberIz?retryWrites=true&w=majority';
 
-const userMiddleware = require("./middleware/user.js");
+const userMiddleware = require("./middleware/user");
 
 app.use(cors());
 

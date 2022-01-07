@@ -4,7 +4,7 @@ const bcrypt = require("bcrypt");
 
 // const { v4: uuidv4 } = require("uuid");
 
-const User = require("../models/user.js");
+const User = require("../models/User");
 
 router.post("/login/adm", async (req, res) => {
     const { login, password } = req.body;
