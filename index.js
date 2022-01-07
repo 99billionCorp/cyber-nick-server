@@ -1,6 +1,5 @@
 const express = require("express");
 const path = require("path");
-const config = require("config");
 const app = express();
 const cors = require('cors');
 const session = require("express-session");
@@ -22,10 +21,10 @@ const store = new MongoStore({
     collection: "sessions",
     databaseName: 'CyberIz'
 }, (e) => {
-    console.log('err: ', e);
+    console.log('Cant connect session err: ', e);
 });
 
-const PORT = config.get("port") || 3000;
+const PORT = 80;
 
 // app.set("view engine", "hbs");
 // app.set("views", "views");
