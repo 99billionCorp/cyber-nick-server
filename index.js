@@ -24,7 +24,7 @@ const store = new MongoStore({
     console.log('Cant connect session err: ', e);
 });
 
-const PORT = 5000;
+const PORT = 8080;
 
 // app.set("view engine", "hbs");
 // app.set("views", "views");
