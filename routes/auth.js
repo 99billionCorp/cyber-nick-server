@@ -70,6 +70,7 @@ router.post("/register", async (req, res) => {
             //Логин занят
             // res.redirect("/auth/login#register");
         }
+
         // else if (password !== repeat) {
         // console.log(password + "  ||| " + repeat);
         //Пароли не совпадают
